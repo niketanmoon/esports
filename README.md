@@ -51,6 +51,6 @@ Now both pyenv and pyenv virtualenv are installed.
 - `pyenv virtualenvs`
 
 ## Activate virtual env
-- `pyenv env-name activate`
+- `pyenv activate env-name`
 ## Deactivate virtual env
 - `pyenv deactivate`
