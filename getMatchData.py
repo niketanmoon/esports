@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime
-
+import io
+import pandas as pd
 
 class MatchData:
     def __init__(self):
@@ -30,6 +31,14 @@ class MatchData:
             print(f"There was error while getting the match data. The error message is {err}")
 
 
+
 data_instance = MatchData()
 url = data_instance.get_path()
 match_data = data_instance.get_data(url)
+
+csv_data = pd.read_csv(io.StringIO(match_data), low_memory=False)
+directory_name = "csv_files/"
+csv_file_name = f'{directory_name}Match Data {datetime.now().strftime("%d_%m_%Y")}.csv'
+# Dumping the dataframe into csv file
+csv_data.to_csv(csv_file_name, index=False)
+
