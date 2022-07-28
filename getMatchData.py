@@ -2,7 +2,7 @@ import requests
 from datetime import datetime, timedelta
 import io
 import pandas as pd
-import os.path
+import os
 
 def get_match_data():
     now = datetime.now()
