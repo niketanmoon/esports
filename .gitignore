@@ -1,2 +1,7 @@
 .idea/
+.python-version
+__pycache__
+.ipynb_checkpoints
 csv_files
+Screenshots
+.DS_Store
