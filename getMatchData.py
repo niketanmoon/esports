@@ -45,3 +45,12 @@ def get_match_data():
         match_data.to_csv(csv_file_name, index=False)
         
         return match_data
+
+
+# from requests_html import HTMLSession
+# from bs4 import BeautifulSoup
+# session = HTMLSession()
+# response = session.get('https://client.finestardiamonds.com/')
+# response.html.render() # ye line jaruri h taki javascript load ho jaye
+# soup = BeautifulSoup(response.html.raw_html, 'html.parser')
+# print(soup.find_all("input", {"label":"USERNAME"}))
