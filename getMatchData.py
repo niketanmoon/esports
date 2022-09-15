@@ -50,7 +50,11 @@ def get_match_data():
 # from requests_html import HTMLSession
 # from bs4 import BeautifulSoup
 # session = HTMLSession()
-# response = session.get('https://client.finestardiamonds.com/')
+# url = "https://vacatures.uva.nl/UvA/search/?createNewAlert=false&q&optionsFacetsDD_department&optionsFacetsDD_shifttype=PhD%2Bposition&optionsFacetsDD_facility&locale=en_GB"
+# # response = session.get('https://client.finestardiamonds.com/')
+# response = session.get(url)
+
 # response.html.render() # ye line jaruri h taki javascript load ho jaye
 # soup = BeautifulSoup(response.html.raw_html, 'html.parser')
-# print(soup.find_all("input", {"label":"USERNAME"}))
+
+# print(soup.find_all("table", {"id": "job-tile-list"}))
